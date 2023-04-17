@@ -53,11 +53,6 @@ body {
     list-style: none;
 }
 
-.task-input,
-.btn {
-    outline: none;
-}
-
 .btn {
     background: none;
     border: 0px;
@@ -66,6 +61,11 @@ body {
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+}
+
+.task-input,
+.btn {
+    outline: none;
 }
 
 .btn:hover {
@@ -165,11 +165,13 @@ body {
     display: none;
 }
 
-.edit-mode .edit-mode-task-input {
+.edit-mode 
+.edit-mode-task-input {
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode .task-title {
+.edit-mode 
+.task-title {
     display: none;
 }
