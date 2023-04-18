@@ -5,30 +5,30 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.preview {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.preview-img {
+.header__img {
     width: 100%;
 }
 
-.preview-link-info {
+.header__link-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-    .preview { 
+    .header { 
         text-align: center;
     }
 
 }
 
-.content {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -40,7 +40,7 @@ body {
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task__row-wrapper {
     display: flex;
 }
 
@@ -63,6 +63,7 @@ body {
     cursor: pointer;
 }
 
+.task-item__input,
 .task-input,
 .btn {
     outline: none;
@@ -84,6 +85,7 @@ body {
     text-transform: uppercase;
 }
 
+.task-item__input,
 .task-input {
     margin: 0;
     font-size: 18px;
@@ -97,18 +99,19 @@ body {
     color: #888;
 }
 
+.task-item__input:focus,
 .task-input:focus {
     color: #333;
 }
 
 
 /* New Task */
-.new-task-title {
+.add-task__title {
     display: block;
     margin: 0 0 20px;
 }
 
-.new-task {
+.add-task__input {
     width: 318px;
 }
 
@@ -127,51 +130,51 @@ body {
     vertical-align: middle;
 }
 
-.task-checkbox {
+.task-item__checkbox {
     margin: 0 10px;
 }
 
-.task-title {
+.task-item__title {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.task-input {
+.task-item__input {
     width: 226px;
 }
 
-.btn-delete-img {
+.task-item__btn-delete_img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.btn-delete-img:hover {
+.task-item__btn-delete_img:hover {
     transform: rotateZ(0);
 }
 
 
 /* Completed */
-.completed-title {
+.task-item__title_completed {
     text-decoration: line-through;
     color: #888;
 }
 
 
 /* Edit Task */
-.edit-mode-task-input {
+.edit-mode__task-input {
     display: none;
 }
 
 .edit-mode 
-.edit-mode-task-input {
+.edit-mode__task-input {
     display: inline-block;
     width: 224px;
 }
 
 .edit-mode 
-.task-title {
+.task-item__title {
     display: none;
 }
