@@ -1,5 +1,4 @@
 /* Basic Style */
-
 .body {
   margin: 0;
   color: #333;
@@ -127,8 +126,6 @@
   align-items: center;
 }
 
-
-.task-item {
 .task-item {
   vertical-align: middle;
 }
