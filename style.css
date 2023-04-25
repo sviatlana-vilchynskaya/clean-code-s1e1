@@ -1,6 +1,5 @@
 /* Basic Style */
-
-.body {
+body {
   margin: 0;
   color: #333;
   font-family: Lato, sans-serif;
@@ -127,9 +126,7 @@
   align-items: center;
 }
 
-
-.task-item {
-.task-item {
+.task-item > * {
   vertical-align: middle;
 }
 
